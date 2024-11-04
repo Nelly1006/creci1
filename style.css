@@ -1,0 +1,176 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  background: #5d9cec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.encabezado {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #a1c4fd;
+  color: #333;
+}
+
+.encabezado h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.encabezado p {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.contenido-principal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.tarjeta {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+}
+
+.icono {
+  font-size: 3.5rem;
+  color: #ff7675;
+  margin-bottom: 1rem;
+}
+
+.tarjeta h2 {
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.tarjeta p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.tarjeta button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background: #5d9cec;
+  color: white;
+  font-size: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.tarjeta button:hover {
+  background: #4d8ed1;
+}
+
+.detalles-ocultos {
+  display: none;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.enlaces-consejos a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #5d9cec;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.enlaces-consejos a:hover {
+  color: #4d8ed1;
+  text-decoration: underline;
+}
+
+.camera-container {
+  display: none;
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+}
+
+.btn-cerrar-camara {
+  padding: 0.5rem;
+  border: none;
+  background-color: #ff7675;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.pie-pagina {
+  padding: 1.5rem;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+  background: #f4f6f9;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>creci</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creci - Herramienta para Padres</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <h1 class="logo">Creci</h1>
+    <ul class="nav-links">
+      <li><a href="#salud">Salud</a></li>
+      <li><a href="#momentos">Momentos</a></li>
+      <li><a href="#sueño">Sueño</a></li>
+      <li><a href="#alimentacion">Alimentación</a></li>
+      <li><a href="#consejos">Consejos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Encabezado principal -->
+  <header class="encabezado">
+    <h1>Bienvenido a Creci</h1>
+    <p>Monitorea cada etapa en el crecimiento de tu bebé</p>
+  </header>
+
+  <!-- Sección de tarjetas principales -->
+  <main class="contenido-principal">
+    <div class="tarjeta" id="salud">
+      <i class="fas fa-heartbeat icono"></i>
+      <h2>Salud</h2>
+      <p>Registra peso, estatura y vacunas.</p>
+      <button onclick="mostrarDetalles(this)">Ver detalles</button>
+      <div class="detalles-ocultos">
+        <p>Consulta el historial de salud de tu bebé y establece recordatorios de vacunación.</p>
+        <button onclick="registrarPeso()">Registrar Peso</button>
+        <button onclick="agendarVacuna()">Agendar Vacuna</button>
+      </div>
+    </div>
+
+    <div class="tarjeta" id="momentos">
+      <i class="fas fa-camera-retro icono"></i>
+      <h2>Momentos Especiales</h2>
+      <p>Captura cada momento importante del crecimiento.</p>
+      <button onclick="mostrarDetalles(this)">Ver detalles</button>
+      <div class="detalles-ocultos">
+        <p>Agrega fotos y notas para cada hito en la vida de tu bebé.</p>
+        <button onclick="abrirCamara()">Capturar Momento</button>
+      </div>
+      <!-- Video para mostrar la cámara -->
+      <div class="camera-container">
+        <video id="video" autoplay></video>
+        <button onclick="cerrarCamara()" class="btn-cerrar-camara">Cerrar Cámara</button>
+      </div>
+    </div>
+
+    <div class="tarjeta" id="sueño">
+      <i class="fas fa-bed icono"></i>
+      <h2>Sueño</h2>
+      <p>Registra patrones de sueño y recibe consejos personalizados.</p>
+      <button onclick="mostrarDetalles(this)">Ver detalles</button>
+      <div class="detalles-ocultos">
+        <p>Monitorea el tiempo de descanso y obtén sugerencias para mejorar la calidad del sueño.</p>
+        <button onclick="registrarSueño()">Registrar Sueño</button>
+      </div>
+    </div>
+
+    <div class="tarjeta" id="alimentacion">
+      <i class="fas fa-utensils icono"></i>
+      <h2>Alimentación</h2>
+      <p>Seguimiento de lactancia, fórmula y sólidos.</p>
+      <button onclick="mostrarDetalles(this)">Ver detalles</button>
+      <div class="detalles-ocultos">
+        <p>Registra el tipo de alimentación y las cantidades.</p>
+        <button onclick="registrarAlimentacion()">Registrar Alimentación</button>
+      </div>
+    </div>
+
+    <div class="tarjeta" id="consejos">
+      <i class="fas fa-lightbulb icono"></i>
+      <h2>Consejos</h2>
+      <p>Consejos útiles para cada etapa del crecimiento.</p>
+      <button onclick="mostrarDetalles(this)">Ver detalles</button>
+      <div class="detalles-ocultos">
+        <p>Recibe recomendaciones personalizadas para el cuidado de tu bebé.</p>
+        <div class="enlaces-consejos">
+          <a href="https://www.youtube.com/watch?v=Ejemplo1" target="_blank"><i class="fab fa-youtube"></i> Video sobre alimentación de bebés</a>
+          <a href="https://www.youtube.com/watch?v=Ejemplo2" target="_blank"><i class="fab fa-youtube"></i> Consejos de sueño para recién nacidos</a>
+          <a href="https://www.tiktok.com/@ejemplo" target="_blank"><i class="fab fa-tiktok"></i> Tips de cuidado en TikTok</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <p>&copy; 2024 Creci. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
